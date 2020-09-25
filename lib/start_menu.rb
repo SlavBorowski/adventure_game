@@ -52,12 +52,12 @@ def start_menu_selection
     puts `clear`
     case user_choice
     when "new"
-      puts "This option is not implemented yet."
+      create_character
     when "load"
       puts "This option is not implemented yet."
     when "exit"  
       puts
-      puts "Thanks for playing Adventures in Olympus. See you soon!"
+      puts "Thanks for playing Islands of the Blessed. See you soon!"
       exit
     else 
       puts "Please select from the options above: NEW, LOAD or EXIT"

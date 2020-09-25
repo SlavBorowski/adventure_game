@@ -51,21 +51,26 @@ end
 def get_character_class
 
   
-  class_options = read_classes()
+  class_options = read_classes
   #["warrior", "mage", "rogue", "ranger"]
-  #puts __FILE__
-  #print class_options
-
-   puts "     Now it's time to choose a Class."
-   puts "     Here are your options:"
-   puts
   
-   class_options.each do |n|
+  puts "     Now it's time to choose a Class."
+  puts "     Here are your options:"
+  puts
 
-     puts "     - #{n[name].capitalize}"
-    
-   end  
-   puts
+  class_options.each do |n|
+
+    puts "     - #{n.name.capitalize}"
+    puts
+    puts "     - #{n.description}"
+    puts
+    puts "     - #{n.stats}"
+    puts
+  
+  end  
+  puts 
+   #print class_options
+
 
 end  
 
@@ -73,9 +78,9 @@ def read_classes
 
   data = File.read(PLAYER_CLASSES)
   JSON.parse(data).map do |player_class|
-    Character_class.new(
+    Character_Class.new(
       player_class['name'],
-      player_class'description'],
+      player_class['description'],
       player_class['stats'],
     )
   end

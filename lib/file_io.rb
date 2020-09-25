@@ -1,6 +1,6 @@
 def read_file(filename)
 
-  path = 
+  #path = 
   file_data = File.read(filename)
 
 

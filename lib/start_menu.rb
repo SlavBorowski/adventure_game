@@ -33,7 +33,8 @@ def display_start_menu
                                           ./ss`.      
 
   EOF
-  puts "     Welcome to Islands of the Blessed!"
+  puts "     Welcome to Isles of the Blessed!"
+  puts "     Please ensure you set you terminal window to fullscreen."
   puts "     What would you like to do?"
   puts "     1. Start a NEW adventure."
   puts "     2. LOAD an existing game."
@@ -57,7 +58,7 @@ def start_menu_selection
       puts "This option is not implemented yet."
     when "exit"  
       puts
-      puts "Thanks for playing Islands of the Blessed. See you soon!"
+      puts "Thanks for playing Isles of the Blessed. See you soon!"
       exit
     else 
       puts "Please select from the options above: NEW, LOAD or EXIT"

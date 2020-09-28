@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Slav",
+    "short_description": "A guy.",
+    "stats": {
+      "strength": 14,
+      "dexterity": 16,
+      "constitution": 11,
+      "intelligence": 13,
+      "wisdom": 15,
+      "charisma": 9
+    },
+    "profession": "ranger"
+  }
+]

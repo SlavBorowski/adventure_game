@@ -1,25 +1,14 @@
 def create_character
 
   class_options = read_classes
-  puts class_options.class
 
   puts "     OK let's start a new adventure."  
   name = get_text("name")
   description = get_text("description")
   player_class = get_character_class(class_options)
-  #p player_class.class
   
-  # puts name
-  # puts description
-  # puts player_class[0]
-  # puts player_class[1]
-
-
-  new_player = Player.new(name, description, player_class[0], player_class[1])
-  #puts new_player
-
-
-  #save new player to player file
+  new_player = Player.new(name, description, player_class[1], player_class[0])
+  new_player.save
 
 end
 
@@ -47,9 +36,11 @@ def confirm_text
     when "yes" 
       #check_name(name)
       puts "     Great, let's move to the next step."
+      puts
       return true
     when "no"
       puts "     OK let's try again."   
+      puts
       return false
   end
 
@@ -63,9 +54,7 @@ def get_character_class(class_options)
   puts
 
   class_options.each do |n|
-    
-    n.print_class
-      
+    n.print_class  
   end  
 
   loop do
@@ -85,7 +74,6 @@ def get_character_class(class_options)
     puts "     That is not a Class, please try again."
     
   end
-  
 
 end  
 

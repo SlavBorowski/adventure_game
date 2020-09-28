@@ -1,0 +1,1 @@
+#move all player_list functions here inside a class

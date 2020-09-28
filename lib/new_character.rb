@@ -1,16 +1,22 @@
 def create_character
 
+  class_options = read_classes
+  puts class_options.class
+
   puts "     OK let's start a new adventure."  
   name = get_text("name")
   description = get_text("description")
-  player_class = get_character_class()
+  player_class = get_character_class(class_options)
+  #p player_class.class
   
-  puts name
-  puts description
-  puts player_class
+  # puts name
+  # puts description
+  # puts player_class[0]
+  # puts player_class[1]
 
 
-  #new_player = Character.new(name, description, player_class)
+  new_player = Player.new(name, description, player_class[0], player_class[1])
+  #puts new_player
 
 
   #save new player to player file
@@ -50,12 +56,8 @@ def confirm_text
 end
 # Check if name already exits in saved characters
 
-def get_character_class
+def get_character_class(class_options)
 
-  
-  class_options = read_classes
-  #["warrior", "mage", "rogue", "ranger"]
-  
   puts "     Now it's time to choose a Class."
   puts "     Here are your options:"
   puts
@@ -75,14 +77,13 @@ def get_character_class
     class_options.each do |n|
       
       if selection == n.name  then 
-        return selection
+        return [selection, n.stats]
       end
 
     end  
 
     puts "     That is not a Class, please try again."
     
-  
   end
   
 

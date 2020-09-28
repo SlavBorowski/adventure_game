@@ -22,11 +22,30 @@ class Character_Class
     puts
     puts
 
-  end  
-
-  def save()
-
-
-  end 
+  end
 
 end
+
+
+class Player < Character_Class
+
+  def initialize(name, short_description, stats, profession)
+    @name = name
+    @short_description = short_description
+    @stats = stats
+    @profession = profession
+    #@skills
+  end
+
+  def save(player)
+
+    
+    data = player
+
+
+
+
+
+  end
+
+end  

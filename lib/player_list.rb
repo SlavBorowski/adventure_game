@@ -54,4 +54,35 @@ class Player_List
   
   end 
 
+
+  def overwrite_player(player)
+
+    self.players.each do |search|
+      if player.name == search.name
+        search.name = player.name
+        search.short_description = player.short_description
+        search.stats = player.stats
+        search.profession = player.profession  
+      end
+    end
+  
+  end
+
+
+  def load_player(name)
+
+    self.players.each do |search|
+      if name == search.name
+        new_player = Player.new(
+          search.name,
+          search.short_description,
+          search.stats,
+          search.profession  
+        )  
+        return new_player
+      end
+    end
+
+  end  
+
 end

@@ -53,15 +53,19 @@ def start_menu_selection
     puts `clear`
     case user_choice
     when "new"
-      create_character
+      return create_character
     when "load"
-      puts "This option is not implemented yet."
+      name = get_text("name")
+      players = Player_List.new
+      returning_player = players.load_player(name)
+      puts "     Loading your character:"
+      returning_player.print_player
     when "exit"  
       puts
-      puts "Thanks for playing Isles of the Blessed. See you soon!"
+      puts "     Thanks for playing Isles of the Blessed. See you soon!"
       exit
     else 
-      puts "Please select from the options above: NEW, LOAD or EXIT"
+      puts "     Please select from the options above: NEW, LOAD or EXIT"
     end  
   end  
 end

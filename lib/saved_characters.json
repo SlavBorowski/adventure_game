@@ -1,20 +1,7 @@
 [
   {
-    "name": "Slav",
-    "short_description": "that guy.",
-    "stats": {
-      "strength": 9,
-      "dexterity": 15,
-      "constitution": 14,
-      "intelligence": 16,
-      "wisdom": 13,
-      "charisma": 11
-    },
-    "profession": "mage"
-  },
-  {
-    "name": "Jack",
-    "short_description": "Another guy.",
+    "name": "aragorn",
+    "short_description": "a mysterious man, his face concealed by the shadow from his hood.",
     "stats": {
       "strength": 14,
       "dexterity": 16,
@@ -24,18 +11,5 @@
       "charisma": 9
     },
     "profession": "ranger"
-  },
-  {
-    "name": "Jim",
-    "short_description": "him",
-    "stats": {
-      "strength": 13,
-      "dexterity": 16,
-      "constitution": 11,
-      "intelligence": 15,
-      "wisdom": 14,
-      "charisma": 9
-    },
-    "profession": "rogue"
   }
 ]

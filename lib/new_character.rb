@@ -13,9 +13,10 @@ def create_character
 
   description = get_text("description")
   player_class = get_character_class(class_options)
-    
-  new_player = Player.new(name, description, player_class[1], player_class[0])
+  new_player = Player.new(name.downcase, description.downcase, player_class[1], player_class[0])
   new_player.save(saved_players)
+
+  return new_player
 
 end
 
@@ -24,7 +25,7 @@ def get_text(input)
   
   check = false
   while check != true 
-    puts "     Please enter a #{input} for your character."
+    puts "     Please enter your character's #{input}."
     print "     ***>"
     user_input = gets.chomp
     puts "     Your character's #{input} is: #{user_input.capitalize}"

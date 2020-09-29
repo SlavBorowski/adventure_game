@@ -30,17 +30,19 @@ class Player < Character
   attr_accessor :profession
 
   def initialize(name, short_description, stats, profession)
+
     @name = name
     @short_description = short_description
     @stats = stats
     @profession = profession
+
   end
 
   def save(saved_players)
 
     if saved_players.find_player(self.name) 
 
-
+      saved_players.overwrite_player(self)
       saved_players.write_players
       puts "     Your progress has been saved."
     else 
@@ -48,17 +50,21 @@ class Player < Character
       saved_players.write_players
       puts "     You're character has been saved."
     end  
+
   end
 
+
+  def print_player
+
+    puts "     Name:        #{self.name.capitalize}"
+    puts "     Class:       #{self.profession.capitalize}"
+    puts "     Description: #{self.short_description.capitalize}"
+    puts "     Stats:"
+    self.stats.each_pair do |name, value|
+      print "      | #{name.capitalize} :  #{value} |"
+    end
+    puts
+
+  end  
+
 end  
-
-
-def overwrite_player(player_list, player)
-
-  #find player
-    #overwrite player in aarray
-
-  
-  write_players(player_list)  
-
-end

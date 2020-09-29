@@ -2,8 +2,7 @@
   {
     "name": "warrior",
     "short_description": "Skilled combatant or strategist typically relying on his heavy armor and weapons to cut down their enemies. His training gives him unique abilities.",
-    "description": "One of the most basic classes, the Warrior puts emphasis on strength and physical combat. Wielding melee weapons, they typically lack range, or have only limited ranged attack options, but they excel at fighting enemies in close range combat, often having high HP, defense, and attack capabilities to aid in this. In a team or party based game they put themselves at risk at the front of the group and take the brunt of the damage meant for their less sturdy comrades. A Warrior's strength is boosted by the wide variety of equipment they can use and they are usually able to equip the widest variety of weaponry and armor, including stuff too heavy for other classes. Most of the time the Fighter is considered the default hero class and as such they are often considered good for beginners.",
-    "stats": {
+      "stats": {
       "strength": 16,
       "dexterity": 14,
       "constitution": 15,
@@ -15,7 +14,6 @@
   {
     "name": "mage",
     "short_description": "A keeper of arcane secrets and forgotten knowledge, the wizard manipulates magic and spells with cunning.",
-    "description": "By whatever name you know this class by, you know this class: they primarily use magic powers. In any game with classes, there will always be one that maps to the Mage. These have the widest variety of any set of role-playing classes simply because there are so many varieties of Functional Magic. In a Fantasy Kitchen Sink setting, there can potentially be an infinite number of magic users, so long as there is justification for considering them each their own type. A Mage is usually a Glass Cannon, blasting away at long range, but easily taken down at close range.",
     "stats": {
       "strength": 9,
       "dexterity": 15,
@@ -28,7 +26,6 @@
   {
     "name": "rogue",
     "short_description": "A thief, assassin or stealthy character who has a knack for picking out his enemies weaknesses and exploiting them.",
-    "description": "Rogues are a diverse class that contains everything from dexterous thieves, to treasure-hunters, to assassins. Masters of stealth and infiltration, Rogues prefer to attack when their opponent is least aware. They are quick but fragile, unable to take heavy damage, and instead rely on their speed to dodge attacks and slip in and out of the shadows to catch their opponent off guard; setting traps and inflicting status effects on foes to give them the edge. Outside of battle Rogues usually have a wide range of helpful utility abilities such as lockpicking to allow them to open locked doors and treasure chests without needing to find/buy keys or the ability to detect and disarm traps. Some can even steal items directly from enemies allowing the player to obtain items that otherwise might be unobtainable. Sometimes Rogues are lumped in with the Ranger class, but more commonly they are differentiated by specializing in melee - particularly with light blades and daggers or ranged attacks using throwing weapons such as knives and shuriken",
     "stats": {
       "strength": 13,
       "dexterity": 16,
@@ -41,7 +38,6 @@
   {
     "name": "ranger",
     "short_description": "One who uses a unique blend of wilderness knowledge and martial ability to be a deadly hunter, with a bow, a pet or melee weapons.",
-    "description": "Rangers are woodsmen skilled at surviving in the wild. They may be lumped in with Fighters or Rogues (above) but more often than not are a separate tree of classes all their own. Archery is generally their favored skill, although melee combat also has a focus either primarily (In which case they will probably also have a lot of ranged abilities) or as a backup for when enemies get close. Rangers may also be skilled in some form of wilderness or nature magic, and sometimes capable of utilizing their terrain or surroundings to their advantage. They may be very good at fighting a specific type of enemy, and often take on the role of a Hunter of Monsters against such foes. In a setting that allows guns, they will usually appear in the hands of the Ranger.",
     "stats": {
       "strength": 14,
       "dexterity": 16,

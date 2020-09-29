@@ -82,7 +82,7 @@ class Player_List
         return new_player
       end
     end
-
+    puts "That character does not exist!"
   end  
 
 end

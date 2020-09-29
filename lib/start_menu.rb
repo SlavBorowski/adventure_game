@@ -53,13 +53,18 @@ def start_menu_selection
     puts `clear`
     case user_choice
     when "new"
-      return create_character
+       start_game(create_character)
     when "load"
       name = get_text("name")
       players = Player_List.new
+      while !players.find_player(name)
+        puts "     That character does not exist!"
+        name = get_text("name")
+      end
       returning_player = players.load_player(name)
       puts "     Loading your character:"
       returning_player.print_player
+      start_game(returning_player)
     when "exit"  
       puts
       puts "     Thanks for playing Isles of the Blessed. See you soon!"
@@ -70,6 +75,14 @@ def start_menu_selection
   end  
 end
 
+
+def start_game(character)
+
+  puts "     Game starting..."
+  # loop do
+
+
+end  
 
 
 

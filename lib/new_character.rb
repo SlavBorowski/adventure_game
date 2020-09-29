@@ -73,7 +73,6 @@ def get_character_class(class_options)
         return [selection, n.stats]
       end
     end  
-    puts "     That is not a Class, please try again."
   end
 
 end  

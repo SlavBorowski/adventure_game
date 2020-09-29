@@ -1,7 +1,7 @@
 
 class Room
 
-  def initialize(id, name, description, exits, npcs, items, special)
+  def initialize(id, name, description, exits)
 
     @id = id
     @name = name
@@ -9,10 +9,10 @@ class Room
     #use a hash for exits
     @exits = exits
     #array of npc ids
-    @npcs = npcs
+    #@npcs = npcs
     #array of item ids
-    @items = items
-    @special = special
+    #@items = items
+    #@special = special
 
   end
 

@@ -57,13 +57,15 @@ class Player < Character
   def print_player
 
     puts "     Name:        #{self.name.capitalize}"
+    puts
     puts "     Class:       #{self.profession.capitalize}"
+    puts
     puts "     Description: #{self.short_description.capitalize}"
-    puts "     Stats:"
+    puts
+    print "     Stats:"
     self.stats.each_pair do |name, value|
       print "      | #{name.capitalize} :  #{value} |"
     end
-    puts
 
   end  
 

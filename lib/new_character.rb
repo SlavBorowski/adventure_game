@@ -1,7 +1,7 @@
 def create_character
 
   class_options = read_classes
-  saved_players = Player_List.new
+  saved_players = PlayerList.new
 
   puts "     OK let's start a new adventure."  
   

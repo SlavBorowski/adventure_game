@@ -38,7 +38,7 @@ def display_start_menu
   puts "     What would you like to do?"
   puts "     1. Start a NEW adventure."
   puts "     2. LOAD an existing game."
-  puts "     3. EXIT the game."
+  puts "     3. QUIT the game."
   puts
   print "    ***>"
 
@@ -56,21 +56,23 @@ def start_menu_selection
        start_game(create_character)
     when "load"
       name = get_text("name")
-      players = Player_List.new
+      players = PlayerList.new
       until players.find_player(name)
         puts "     That character does not exist!"
         name = get_text("name")
       end
       returning_player = players.load_player(name)
       puts "     Loading your character:"
+      puts
       returning_player.print_player
+      puts puts puts puts puts
       start_game(returning_player)
-    when "exit"  
+    when "quit"  
       puts
       puts "     Thanks for playing Isles of the Blessed. See you soon!"
       exit
     else 
-      puts "     Please select from the options above: NEW, LOAD or EXIT"
+      puts "     Please select from the options above: NEW, LOAD or QUIT"
     end  
   end  
 end
@@ -79,8 +81,25 @@ end
 def start_game(character)
 
   puts "     Game starting..."
-  # loop do
-
+  puts puts
+  location = 1
+  world = RoomList.new
+  current_room = world.load_room(location)
+  current_room.print_room
+  puts "     What would you like to do?"
+  loop do
+    print "    ***>"
+    action = gets.chomp.downcase
+    case action
+    when "quit"
+      saved_players = PlayerList.new
+      character.save(saved_players)
+      puts "     Thanks for playing Isles of the Blessed. See you soon!"
+      exit
+    else 
+      puts "     That is not a valid action, please try again. Type 'help' if you are stuck."
+    end  
+  end  
 
 end  
 

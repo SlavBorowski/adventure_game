@@ -1,4 +1,5 @@
-class Player_List
+class PlayerList
+  
   attr_accessor :players
   
   def initialize
@@ -47,7 +48,7 @@ class Player_List
         name: player.name,
         short_description: player.short_description,
         stats: player.stats,
-        profession: player.profession #whats tha matter with this
+        profession: player.profession
       }
     end  
     File.write(PLAYERS_DATABASE, JSON.pretty_generate(file_data))

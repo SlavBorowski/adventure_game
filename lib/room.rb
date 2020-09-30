@@ -1,19 +1,32 @@
 
 class Room
 
-  def initialize(id, name, description, exits)
+  attr_accessor :id_number, :name, :description, :exits
 
-    @id = id
+  def initialize(id_number, name, description, exits)
+
+    @id_number = id_number
     @name = name
     @description =description
-    #use a hash for exits
     @exits = exits
-    #array of npc ids
-    #@npcs = npcs
-    #array of item ids
-    #@items = items
-    #@special = special
 
   end
+
+
+  def print_room
+
+    puts "     #{self.name.capitalize}"
+    puts
+    puts "     #{self.description.capitalize}"
+    puts
+    print "     Exits:"
+    self.exits.each_pair do |key, value|
+      unless value == 0
+        print " | #{key.capitalize} |"
+      end
+    end
+    puts
+
+  end  
 
 end 

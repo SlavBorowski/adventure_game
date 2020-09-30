@@ -57,7 +57,7 @@ def start_menu_selection
     when "load"
       name = get_text("name")
       players = Player_List.new
-      while !players.find_player(name)
+      until players.find_player(name)
         puts "     That character does not exist!"
         name = get_text("name")
       end

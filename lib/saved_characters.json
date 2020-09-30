@@ -24,5 +24,18 @@
       "charisma": 11
     },
     "profession": "mage"
+  },
+  {
+    "name": "alan",
+    "short_description": "a guy.",
+    "stats": {
+      "strength": 9,
+      "dexterity": 15,
+      "constitution": 14,
+      "intelligence": 16,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "profession": "mage"
   }
 ]

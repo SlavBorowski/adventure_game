@@ -24,7 +24,7 @@ end
 def get_text(input)
   
   check = false
-  while check != true 
+  unless check == true 
     puts "     Please enter your character's #{input}."
     print "     ***>"
     user_input = gets.chomp

@@ -15,16 +15,12 @@ class Room
 
   def print_room
 
-    exit_list = self.check_exits
     puts "     #{self.name.capitalize}"
     puts
-    puts "     #{self.description.capitalize}"
+    puts "     #{self.description}"
     puts
     print "     Exits:"
-    exit_list.each do |exit|
-      print "    | #{exit} |"
-    end  
-    puts
+    self.print_exits
 
   end  
 
@@ -39,6 +35,17 @@ class Room
     end
     return exit_list
 
+  end  
+
+
+  def print_exits
+    
+    exit_list = self.check_exits
+    print "     Exits:"
+    exit_list.each do |exit|
+      print "    | #{exit} |"
+    end  
+    puts
   end  
 
 end 

@@ -37,5 +37,31 @@
       "charisma": 11
     },
     "profession": "mage"
+  },
+  {
+    "name": "gimli",
+    "short_description": "a fat dwarf.",
+    "stats": {
+      "strength": 16,
+      "dexterity": 14,
+      "constitution": 15,
+      "intelligence": 9,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "profession": "warrior"
+  },
+  {
+    "name": "jim",
+    "short_description": "that guy over there.",
+    "stats": {
+      "strength": 13,
+      "dexterity": 16,
+      "constitution": 11,
+      "intelligence": 15,
+      "wisdom": 14,
+      "charisma": 9
+    },
+    "profession": "rogue"
   }
 ]

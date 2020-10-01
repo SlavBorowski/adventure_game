@@ -15,7 +15,7 @@
     "name": "Your living room.",
     "description": "A small room with a table and chairs in the middle. Through the windows you can see the front gate and a garden. To the west you can see your kitchen and north is the door that leads outside. Your bedroom door is south.",
     "exits": {
-      "north": 0,
+      "north": 4,
       "south": 1,
       "east": 0,
       "west": 3

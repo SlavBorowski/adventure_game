@@ -1,30 +1,3 @@
-class Character
-
-  attr_accessor :name, :short_description, :stats 
-
-  def initialize(name, short_description, stats)
-    @name = name
-    @short_description = short_description
-    @stats = stats
-  end
-
-  def print_class
-
-    puts "     * #{name.capitalize}"
-    puts
-    puts "       #{short_description}"
-    puts
-    stats.each_pair do |name, value|
-      print "      | #{name.capitalize} :  #{value} |"
-    end
-    puts
-    puts
-
-  end
-
-end
-
-
 class Player < Character
 
   attr_accessor :profession
@@ -45,10 +18,12 @@ class Player < Character
       saved_players.overwrite_player(self)
       saved_players.write_players
       puts "     Your progress has been saved."
+      puts
     else 
       saved_players.players << self
       saved_players.write_players
       puts "     You're character has been saved."
+      puts
     end  
 
   end

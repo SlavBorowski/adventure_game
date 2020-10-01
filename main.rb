@@ -4,8 +4,10 @@ require_relative './lib/start_menu.rb'
 require_relative './lib/room.rb'
 require_relative './lib/room_list.rb'
 require_relative './lib/new_character.rb'
-require_relative './lib/player_class.rb'
+require_relative './lib/character.rb'
+require_relative './lib/player.rb'
 require_relative './lib/player_list.rb'
+require_relative './lib/play_game.rb'
 
 
 require 'json'

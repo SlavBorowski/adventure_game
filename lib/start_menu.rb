@@ -82,7 +82,7 @@ def start_game(character)
 
   puts "     Game starting..."
   puts puts
-  location = 1
+  location = 4
   world = RoomList.new
   current_room = world.load_room(location)
   current_room.print_room

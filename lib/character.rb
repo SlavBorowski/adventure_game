@@ -10,12 +10,12 @@ class Character
 
   def print_class
 
-    puts "     * #{name.capitalize}"
+    puts "     * #{name.capitalize}".colorize(:light_green)
     puts
-    puts "       #{short_description}"
+    puts "       #{short_description}".colorize(:green)
     puts
     stats.each_pair do |name, value|
-      print "      | #{name.capitalize} :  #{value} |"
+      print "      | #{name.capitalize} :  #{value} |".colorize(:green)
     end
     puts
     puts

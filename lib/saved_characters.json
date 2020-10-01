@@ -63,5 +63,31 @@
       "charisma": 9
     },
     "profession": "rogue"
+  },
+  {
+    "name": "frodo",
+    "short_description": "a hobbit",
+    "stats": {
+      "strength": 13,
+      "dexterity": 16,
+      "constitution": 11,
+      "intelligence": 15,
+      "wisdom": 14,
+      "charisma": 9
+    },
+    "profession": "rogue"
+  },
+  {
+    "name": "donald",
+    "short_description": "an orange haired fellow.",
+    "stats": {
+      "strength": 13,
+      "dexterity": 16,
+      "constitution": 11,
+      "intelligence": 15,
+      "wisdom": 14,
+      "charisma": 9
+    },
+    "profession": "rogue"
   }
 ]

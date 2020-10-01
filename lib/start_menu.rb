@@ -28,15 +28,16 @@ def display_start_menu
                                   :yNMMMMMMM+M+              
                                     `/yNMMMMdyN:             
                                         -smMMdhN:            
-                                          ./ss`.      
+                                          ./ss`.
 
   EOF
-  puts "     Welcome to Isles of the Blessed!"
-  puts "     Please ensure you set you terminal window to fullscreen."
-  puts "     What would you like to do?"
-  puts "     1. Start a NEW adventure."
-  puts "     2. LOAD an existing game."
-  puts "     3. QUIT the game."
+  puts "     Welcome to Isles of the Blessed!".colorize(:light_cyan)
+  puts "     Please ensure you set you terminal window to fullscreen.".colorize(:light_cyan)
+  puts "     What would you like to do?".colorize(:light_cyan)
+  puts
+  puts "     1. Start a NEW adventure.".colorize(:light_yellow)
+  puts "     2. LOAD an existing game.".colorize(:light_yellow)
+  puts "     3. QUIT the game.".colorize(:light_yellow)
   puts
   print "    ***>"
 
@@ -56,10 +57,10 @@ def start_menu_selection
       load_game
     when "quit"  
       puts
-      puts "     Thanks for playing Isles of the Blessed. See you soon!"
+      puts "     Thanks for playing Isles of the Blessed. See you soon!".colorize(:light_cyan)
       exit
     else 
-      puts "     Please select from the options above: NEW, LOAD or QUIT"
+      puts "     Please select from the options above: NEW, LOAD or QUIT".colorize(:red)
     end  
   end  
 end
@@ -70,11 +71,11 @@ def load_game
   name = get_text("name")
   players = PlayerList.new
   until players.find_player(name)
-    puts "     That character does not exist!"
+    puts "     That character does not exist!".colorize(:red)
     name = get_text("name")
   end
   returning_player = players.load_player(name)
-  puts "     Loading your character:"
+  puts "     Loading your character:".colorize(:light_cyan)
   puts
   returning_player.print_player
   puts puts puts puts puts

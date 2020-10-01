@@ -3,11 +3,11 @@ def create_character
   class_options = read_classes
   saved_players = PlayerList.new
 
-  puts "     OK let's start a new adventure."  
+  puts "     OK let's start a new adventure.".colorize(:light_cyan)
   
   name = get_text("name")
   while saved_players.find_player(name)
-    puts "     That name already exists. Please select another one."
+    puts "     That name already exists. Please select another one.".colorize(:red)
     name = get_text("name")
   end  
 
@@ -25,10 +25,10 @@ def get_text(input)
   
   check = false
   unless check == true 
-    puts "     Please enter your character's #{input}."
+    puts "     Please enter your character's #{input}.".colorize(:cyan)
     print "     ***>"
     user_input = gets.chomp
-    puts "     Your character's #{input} is: #{user_input.capitalize}"
+    puts "     Your character's #{input} is: #{user_input.capitalize}".colorize(:cyan)
       check = confirm_text()
   end  
   return user_input
@@ -37,18 +37,18 @@ end
 
 def confirm_text
 
-  puts "     Is that correct? (yes or no)"
+  puts "     Is that correct? (yes or no)".colorize(:cyan)
   print "     ***>"
   case gets.chomp.downcase
     when "yes" 
       puts
       return true
     when "no"
-      puts "     OK let's try again."   
+      puts "     OK let's try again.".colorize(:cyan)
       puts
       return false
     else
-      puts "     That's not a valid selection. Let's try again."   
+      puts "     That's not a valid selection. Let's try again.".colorize(:cyan)
       puts
       return false  
   end
@@ -57,15 +57,15 @@ end
 
 def get_character_class(class_options)
 
-  puts "     Now it's time to choose a Class."
-  puts "     Here are your options:"
+  puts "     Now it's time to choose a Class.".colorize(:cyan)
+  puts "     Here are your options:".colorize(:cyan)
   puts
   class_options.each do |n|
     n.print_class  
   end  
 
   loop do
-    puts "     Please enter one of the #{class_options.count} options:"
+    puts "     Please enter one of the #{class_options.count} options:".colorize(:cyan)
     print "     ***>"
     selection = gets.chomp
     class_options.each do |n|

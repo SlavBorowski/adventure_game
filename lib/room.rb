@@ -15,8 +15,8 @@ class Room
 
   def print_room
 
-    puts "     #{self.name.capitalize}".colorize(:green)
-    puts "     #{self.description}".colorize(:green)
+    puts "#{self.name.capitalize}".colorize(:green).bold.indent(10)
+    puts "#{self.description}".colorize(:light_green).indent(10)
     puts
     self.print_exits
 
@@ -39,9 +39,9 @@ class Room
   def print_exits
     
     exit_list = self.check_exits
-    print "     Exits:".colorize(:yellow)
+    print "Exits:".colorize(:yellow).indent(10)
     exit_list.each do |exit|
-      print "    | #{exit} |".colorize(:yellow)
+      print "| #{exit} |".colorize(:yellow).bold.indent(5)
     end  
     puts
     puts

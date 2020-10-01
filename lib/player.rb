@@ -18,13 +18,13 @@ class Player < Character
       saved_players.overwrite_player(self)
       saved_players.write_players
       puts `clear`
-      puts "     Your progress has been saved.".colorize(:light_cyan)
+      puts "Your progress has been saved.".colorize(:light_cyan).indent(10)
       puts
     else 
       saved_players.players << self
       saved_players.write_players
       puts `clear`
-      puts "     You're character has been saved.".colorize(:light_cyan)
+      puts "You're character has been saved.".colorize(:light_cyan).indent(10)
       puts
     end  
 
@@ -33,15 +33,15 @@ class Player < Character
 
   def print_player
 
-    puts "     Name:        #{self.name.capitalize}".colorize(:yellow)
+    puts "Name:        #{self.name.capitalize}".colorize(:yellow).indent(10)
     puts
-    puts "     Class:       #{self.profession.capitalize}".colorize(:yellow)
+    puts "Class:       #{self.profession.capitalize}".colorize(:yellow).indent(10)
     puts
-    puts "     Description: #{self.short_description.capitalize}".colorize(:yellow)
+    puts "Description: #{self.short_description.capitalize}".colorize(:yellow).indent(10)
     puts
-    print "     Stats:".colorize(:yellow)
+    print "Stats:".colorize(:yellow).indent(10)
     self.stats.each_pair do |name, value|
-      print "      | #{name.capitalize} :  #{value} |".colorize(:yellow)
+      print "| #{name.capitalize} :  #{value} |".colorize(:yellow).indent(5)
     end
 
   end  

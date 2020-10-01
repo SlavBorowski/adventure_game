@@ -3,11 +3,11 @@ def create_character
   class_options = read_classes
   saved_players = PlayerList.new
 
-  puts "     OK let's start a new adventure.".colorize(:light_cyan)
+  puts "OK let's start a new adventure.".colorize(:light_cyan).indent(10)
   
   name = get_text("name")
   while saved_players.find_player(name)
-    puts "     That name already exists. Please select another one.".colorize(:red)
+    puts "That name already exists. Please select another one.".colorize(:red).indent(10)
     name = get_text("name")
   end  
 
@@ -25,10 +25,10 @@ def get_text(input)
   
   check = false
   unless check == true 
-    puts "     Please enter your character's #{input}.".colorize(:cyan)
-    print "     ***>"
+    puts "Please enter your character's #{input}.".colorize(:cyan).indent(10)
+    print "***>".indent(10)
     user_input = gets.chomp
-    puts "     Your character's #{input} is: #{user_input.capitalize}".colorize(:cyan)
+    puts "Your character's #{input} is: #{user_input.capitalize.bold}".colorize(:cyan).indent(10)
       check = confirm_text()
   end  
   return user_input
@@ -37,18 +37,18 @@ end
 
 def confirm_text
 
-  puts "     Is that correct? (yes or no)".colorize(:cyan)
-  print "     ***>"
+  puts "Is that correct? (yes or no)".colorize(:cyan).indent(10)
+  print "***>".indent(10)
   case gets.chomp.downcase
     when "yes" 
       puts
       return true
     when "no"
-      puts "     OK let's try again.".colorize(:cyan)
+      puts "OK let's try again.".colorize(:cyan).indent(10)
       puts
       return false
     else
-      puts "     That's not a valid selection. Let's try again.".colorize(:cyan)
+      puts "That's not a valid selection. Let's try again.".colorize(:cyan).indent(10)
       puts
       return false  
   end
@@ -57,16 +57,16 @@ end
 
 def get_character_class(class_options)
 
-  puts "     Now it's time to choose a Class.".colorize(:cyan)
-  puts "     Here are your options:".colorize(:cyan)
+  puts "Now it's time to choose a Class.".colorize(:cyan).indent(10)
+  puts "Here are your options:".colorize(:cyan).indent(10)
   puts
   class_options.each do |n|
     n.print_class  
   end  
 
   loop do
-    puts "     Please enter one of the #{class_options.count} options:".colorize(:cyan)
-    print "     ***>"
+    puts "Please enter one of the #{class_options.count} options:".colorize(:cyan).indent(10)
+    print "***>".indent(10)
     selection = gets.chomp
     class_options.each do |n|
       if selection == n.name  then 

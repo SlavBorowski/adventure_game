@@ -89,5 +89,18 @@
       "charisma": 9
     },
     "profession": "rogue"
+  },
+  {
+    "name": "harry",
+    "short_description": "a young wizard.",
+    "stats": {
+      "strength": 9,
+      "dexterity": 15,
+      "constitution": 14,
+      "intelligence": 16,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "profession": "mage"
   }
 ]

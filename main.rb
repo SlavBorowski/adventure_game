@@ -1,5 +1,6 @@
 #gems
 require 'colorize'
+require 'inkjet'
 
 
 require 'json'

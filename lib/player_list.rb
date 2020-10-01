@@ -83,7 +83,7 @@ class PlayerList
         return new_player
       end
     end
-    puts "That character does not exist!"
+    puts "That character does not exist!".colorize(:red).indent(10)
   end  
 
 end

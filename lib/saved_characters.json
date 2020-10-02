@@ -10,7 +10,8 @@
       "wisdom": 15,
       "charisma": 9
     },
-    "profession": "ranger"
+    "profession": "ranger",
+    "location": 1
   },
   {
     "name": "slav",
@@ -23,7 +24,8 @@
       "wisdom": 13,
       "charisma": 11
     },
-    "profession": "mage"
+    "profession": "mage",
+    "location": 10
   },
   {
     "name": "alan",
@@ -36,7 +38,8 @@
       "wisdom": 13,
       "charisma": 11
     },
-    "profession": "mage"
+    "profession": "mage",
+    "location": 1
   },
   {
     "name": "gimli",
@@ -49,7 +52,8 @@
       "wisdom": 13,
       "charisma": 11
     },
-    "profession": "warrior"
+    "profession": "warrior",
+    "location": 1
   },
   {
     "name": "jim",
@@ -62,7 +66,8 @@
       "wisdom": 14,
       "charisma": 9
     },
-    "profession": "rogue"
+    "profession": "rogue",
+    "location": 1
   },
   {
     "name": "frodo",
@@ -75,7 +80,8 @@
       "wisdom": 14,
       "charisma": 9
     },
-    "profession": "rogue"
+    "profession": "rogue",
+    "location": 1
   },
   {
     "name": "donald",
@@ -88,7 +94,8 @@
       "wisdom": 14,
       "charisma": 9
     },
-    "profession": "rogue"
+    "profession": "rogue",
+    "location": 1
   },
   {
     "name": "harry",
@@ -101,19 +108,7 @@
       "wisdom": 13,
       "charisma": 11
     },
-    "profession": "mage"
-  },
-  {
-    "name": "ratri",
-    "short_description": "a chonky lady.",
-    "stats": {
-      "strength": 9,
-      "dexterity": 15,
-      "constitution": 14,
-      "intelligence": 16,
-      "wisdom": 13,
-      "charisma": 11
-    },
-    "profession": "mage"
+    "profession": "mage",
+    "location": 1
   }
 ]

@@ -2,7 +2,7 @@
   {
     "id_number": 1,
     "name": "Your bedroom.",
-    "description": "An unmade bed stands in the corner. A wardrobe is next to the door, unused, with a pile of clothes in front of it. There is a small table next to the bed holding some of your adventuring equipment. A door to the north leads out of the bedroom.",
+    "description": "An unmade bed stands in the corner. A wardrobe is next to the door, unused, with a pile of clothes in front of it.\nThere is a small table next to the bed holding some of your adventuring equipment.\nA door to the north leads out of the bedroom.",
     "exits": {
       "north": 2,
       "south": 0,
@@ -13,7 +13,7 @@
   {
     "id_number": 2,
     "name": "Your living room.",
-    "description": "A small room with a table and chairs in the middle. Through the windows you can see the front gate and a garden. To the west you can see your kitchen and north is the door that leads outside. Your bedroom door is south.",
+    "description": "A small room with a table and chairs in the middle. Through the windows you can see the front gate and a garden.\nTo the west you can see your kitchen and north is the door that leads outside. Your bedroom door is south.",
     "exits": {
       "north": 4,
       "south": 1,
@@ -24,7 +24,7 @@
   {
     "id_number": 3,
     "name": "Your kitchen.",
-    "description": "A fireplace with a small chimney is on the back wall with a pot hanging over it. The warmth form the fire is pleasant. You can see your living room to the east.",
+    "description": "A fireplace with a small chimney is on the back wall with a pot hanging over it. The warmth form the fire is pleasant.\nYou can see your living room to the east.",
     "exits": {
       "north": 0,
       "south": 0,
@@ -79,7 +79,7 @@
   {
     "id_number": 8,
     "name": "Outside a general store.",
-    "description": "The village's general store stands before you. There are some wares outside on stands and the door is open. To the west, a path leads out of town.",
+    "description": "The village's general store stands before you. There are some wares outside on stands and the door is open.\nTo the west, a path leads out of town.",
     "exits": {
       "north": 0,
       "south": 0,

@@ -22,6 +22,7 @@ class PlayerList
           player['short_description'],
           player['stats'],
           player['profession'],
+          player['location']
         )
       end
     end
@@ -48,7 +49,8 @@ class PlayerList
         name: player.name,
         short_description: player.short_description,
         stats: player.stats,
-        profession: player.profession
+        profession: player.profession,
+        location: player.location
       }
     end  
     File.write(PLAYERS_DATABASE, JSON.pretty_generate(file_data))
@@ -64,6 +66,7 @@ class PlayerList
         search.short_description = player.short_description
         search.stats = player.stats
         search.profession = player.profession  
+        search.location = player.location
       end
     end
   
@@ -78,7 +81,8 @@ class PlayerList
           search.name,
           search.short_description,
           search.stats,
-          search.profession  
+          search.profession,
+          search.location
         )  
         return new_player
       end

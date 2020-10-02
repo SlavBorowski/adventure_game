@@ -1,13 +1,14 @@
 class Player < Character
 
-  attr_accessor :profession
+  attr_accessor :profession, :location
 
-  def initialize(name, short_description, stats, profession)
+  def initialize(name, short_description, stats, profession, location)
 
     @name = name
     @short_description = short_description
     @stats = stats
     @profession = profession
+    @location = location
 
   end
 

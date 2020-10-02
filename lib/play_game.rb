@@ -2,14 +2,13 @@ def start_game(character)
 
   puts "Game starting...".colorize(:light_cyan).indent(10)
   puts puts
-  location = 4
   world = RoomList.new
-  current_room = world.load_room(location)
+  current_room = world.load_room(character.location)
   current_room.print_room
   puts
   puts "What would you like to do? Type 'help' if you need assistance.".colorize(:light_cyan).indent(10)
   puts
-  interaction(character, location, world, current_room)
+  interaction(character, world, current_room)
 
 end  
 
@@ -36,7 +35,7 @@ def quit_game(character)
 end  
 
 
-def interaction(character, location, world, current_room)
+def interaction(character, world, current_room)
 
   loop do
     print "***>".indent(10)
@@ -56,6 +55,7 @@ def interaction(character, location, world, current_room)
         puts "You move #{action}".indent(10)
         puts
         location = current_room.exits[action]
+        character.location = location
         current_room = world.load_room(location)
         current_room.print_room
       else

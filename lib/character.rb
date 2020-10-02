@@ -1,6 +1,6 @@
 class Character
 
-  attr_accessor :name, :short_description, :stats 
+  attr_accessor :name, :short_description, :stats
 
   def initialize(name, short_description, stats)
     @name = name

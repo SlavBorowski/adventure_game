@@ -25,21 +25,7 @@
       "charisma": 11
     },
     "profession": "mage",
-    "location": 10
-  },
-  {
-    "name": "alan",
-    "short_description": "a guy.",
-    "stats": {
-      "strength": 9,
-      "dexterity": 15,
-      "constitution": 14,
-      "intelligence": 16,
-      "wisdom": 13,
-      "charisma": 11
-    },
-    "profession": "mage",
-    "location": 1
+    "location": 4
   },
   {
     "name": "gimli",
@@ -56,36 +42,8 @@
     "location": 1
   },
   {
-    "name": "jim",
-    "short_description": "that guy over there.",
-    "stats": {
-      "strength": 13,
-      "dexterity": 16,
-      "constitution": 11,
-      "intelligence": 15,
-      "wisdom": 14,
-      "charisma": 9
-    },
-    "profession": "rogue",
-    "location": 1
-  },
-  {
     "name": "frodo",
     "short_description": "a hobbit",
-    "stats": {
-      "strength": 13,
-      "dexterity": 16,
-      "constitution": 11,
-      "intelligence": 15,
-      "wisdom": 14,
-      "charisma": 9
-    },
-    "profession": "rogue",
-    "location": 1
-  },
-  {
-    "name": "donald",
-    "short_description": "an orange haired fellow.",
     "stats": {
       "strength": 13,
       "dexterity": 16,
@@ -110,5 +68,89 @@
     },
     "profession": "mage",
     "location": 1
+  },
+  {
+    "name": "jack",
+    "short_description": "that guy",
+    "stats": {
+      "strength": 16,
+      "dexterity": 14,
+      "constitution": 15,
+      "intelligence": 9,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "profession": "warrior",
+    "location": 1
+  },
+  {
+    "name": "john",
+    "short_description": "sadasd",
+    "stats": {
+      "strength": 9,
+      "dexterity": 15,
+      "constitution": 14,
+      "intelligence": 16,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "profession": "mage",
+    "location": 1
+  },
+  {
+    "name": "sadsd",
+    "short_description": "adssad",
+    "stats": {
+      "strength": 9,
+      "dexterity": 15,
+      "constitution": 14,
+      "intelligence": 16,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "profession": "mage",
+    "location": 1
+  },
+  {
+    "name": "sadas",
+    "short_description": "asdsa",
+    "stats": {
+      "strength": 9,
+      "dexterity": 15,
+      "constitution": 14,
+      "intelligence": 16,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "profession": "mage",
+    "location": 1
+  },
+  {
+    "name": "sdasd",
+    "short_description": "asdsa",
+    "stats": {
+      "strength": 9,
+      "dexterity": 15,
+      "constitution": 14,
+      "intelligence": 16,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "profession": "mage",
+    "location": 1
+  },
+  {
+    "name": "asdsad",
+    "short_description": "asdsad",
+    "stats": {
+      "strength": 9,
+      "dexterity": 15,
+      "constitution": 14,
+      "intelligence": 16,
+      "wisdom": 13,
+      "charisma": 11
+    },
+    "profession": "mage",
+    "location": 2
   }
 ]

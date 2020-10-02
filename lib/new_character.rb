@@ -9,11 +9,11 @@ def create_character
   while saved_players.find_player(name)
     puts "That name already exists. Please select another one.".colorize(:red).indent(10)
     name = get_text("name")
-  end  
+  end
 
   description = get_text("description")
   player_class = get_character_class(class_options)
-  new_player = Player.new(name.downcase, description.downcase, player_class[1], player_class[0])
+  new_player = Player.new(name.downcase, description.downcase, player_class[1], player_class[0], 1)
   new_player.save(saved_players)
 
   return new_player
@@ -29,8 +29,8 @@ def get_text(input)
     print "***>".indent(10)
     user_input = gets.chomp
     puts "Your character's #{input} is: #{user_input.capitalize.bold}".colorize(:cyan).indent(10)
-      check = confirm_text()
-  end  
+    check = confirm_text
+  end
   return user_input
     
 end  
@@ -39,6 +39,7 @@ def confirm_text
 
   puts "Is that correct? (yes or no)".colorize(:cyan).indent(10)
   print "***>".indent(10)
+
   case gets.chomp.downcase
     when "yes" 
       puts
@@ -62,7 +63,7 @@ def get_character_class(class_options)
   puts
   class_options.each do |n|
     n.print_class  
-  end  
+  end
 
   loop do
     puts "Please enter one of the #{class_options.count} options:".colorize(:cyan).indent(10)

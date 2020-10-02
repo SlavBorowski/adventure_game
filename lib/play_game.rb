@@ -1,5 +1,7 @@
 def start_game(character)
-
+  
+  character.print_player
+  puts puts puts puts puts
   puts "Game starting...".colorize(:light_cyan).indent(10)
   puts puts
   world = RoomList.new

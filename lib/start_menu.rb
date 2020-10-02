@@ -79,8 +79,6 @@ def load_game(name)
   puts `clear`
   puts "Welcome back #{name.capitalize.bold}!".colorize(:light_cyan).indent(10)
   puts
-  returning_player.print_player
-  puts puts puts puts puts
   
   start_game(returning_player)
 

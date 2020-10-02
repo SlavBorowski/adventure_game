@@ -12,7 +12,7 @@ class Character
 
     puts "* #{name.capitalize} *".colorize(:light_green).bold.indent(10)
     puts
-    puts "#{short_description}".colorize(:green).indent(10)
+    puts short_description.to_s.colorize(:green).indent(10)
     puts
     stats.each_pair do |name, value|
       print "| ".colorize(:green).indent(10)

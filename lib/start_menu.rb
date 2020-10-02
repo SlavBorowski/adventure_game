@@ -54,7 +54,8 @@ def start_menu_selection
     when "new"
         start_game(create_character)
     when "load"
-      load_game
+      name = get_text("name")
+      load_game(name)
     when "quit"  
       puts
       puts "Thanks for playing Isles of the Blessed. See you soon!".colorize(:light_cyan).indent(10)
@@ -66,19 +67,21 @@ def start_menu_selection
 end
 
 
-def load_game
+def load_game(name)
 
-  name = get_text("name")
+  ARGV.pop
   players = PlayerList.new
   until players.find_player(name)
     puts "That character does not exist!".colorize(:red).indent(10)
     name = get_text("name")
   end
   returning_player = players.load_player(name)
-  puts "Loading your character:".colorize(:light_cyan).indent(10)
+  puts `clear`
+  puts "Welcome back #{name.capitalize.bold}!".colorize(:light_cyan).indent(10)
   puts
   returning_player.print_player
   puts puts puts puts puts
+  
   start_game(returning_player)
 
 end  

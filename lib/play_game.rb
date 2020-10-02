@@ -7,8 +7,37 @@ def start_game(character)
   current_room = world.load_room(location)
   current_room.print_room
   puts
-  puts "What would you like to do?".colorize(:light_cyan).indent(10)
+  puts "What would you like to do? Type 'help' if you need assistance.".colorize(:light_cyan).indent(10)
   puts
+  interaction(character, location, world, current_room)
+
+end  
+
+
+def print_help
+
+  puts
+  puts "You can type a direction to move: 'north', 'south', 'east' and 'west'.".colorize(:red).indent(10)
+  puts
+  puts "You can type 'exits' to see which way you can go.".colorize(:red).indent(10)
+  puts
+  puts "You can type 'quit' to save your character and quit.".colorize(:red).indent(10)
+  puts
+
+end  
+
+def quit_game(character)
+
+  saved_players = PlayerList.new
+  character.save(saved_players)
+  puts "Thanks for playing Isles of the Blessed. See you soon!".colorize(:light_cyan).indent(10)
+  exit
+
+end  
+
+
+def interaction(character, location, world, current_room)
+
   loop do
     print "***>".indent(10)
     action = gets.chomp.downcase
@@ -38,37 +67,6 @@ def start_game(character)
       puts "That is not a valid action, please try again. Type 'help' if you are stuck.".colorize(:red).indent(10)
     end  
   end  
-
-end  
-
-
-def print_help
-
-  puts
-  puts "You can type a direction to move: 'north', 'south', 'east' and 'west'.".colorize(:red).indent(10)
-  puts
-  puts "You can type 'exits' to see which way you can go.".colorize(:red).indent(10)
-  puts
-  puts "You can type 'quit' to save your character and quit.".colorize(:red).indent(10)
-  puts
-
-end  
-
-def quit_game(character)
-
-  saved_players = PlayerList.new
-  character.save(saved_players)
-  puts "Thanks for playing Isles of the Blessed. See you soon!".colorize(:light_cyan).indent(10)
-  exit
-
-end  
-
-
-def move(action)
-
   
-    
-  location = next_room
-
 end  
 

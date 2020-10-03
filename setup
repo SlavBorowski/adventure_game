@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 
-puts "Installing gems required for the game..."
+puts 'Installing gems required for the game...'
+
 filepath = File.dirname __FILE__
+
 Dir.chdir(filepath)
+
 system("bundle install")

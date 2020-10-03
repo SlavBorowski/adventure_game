@@ -1,21 +1,21 @@
 class PlayerList
-  
+
   attr_accessor :players
-  
+
   def initialize
 
     @players = read_players
 
   end
-  
-  
+
+
   def read_players
 
     file_data = File.read(PLAYERS_DATABASE)
-  
-    if file_data.empty? 
-      return []
-    else  
+
+    if file_data.empty?
+      []
+    else
       JSON.parse(file_data).map do |player|
         Player.new(
           player['name'],
@@ -30,21 +30,19 @@ class PlayerList
   end
 
 
-  def find_player(player_name) 
+  def find_player(player_name)
 
-    self.players.each do |search|
-      if player_name == search.name
-          return true
-      end
+    players.each do |search|
+      return true if player_name == search.name
     end
-    return false
+    false
 
-  end  
+  end 
 
 
   def write_players
 
-    file_data = self.players.map do |player|
+    file_data = players.map do |player|
       {
         name: player.name,
         short_description: player.short_description,
@@ -52,30 +50,30 @@ class PlayerList
         profession: player.profession,
         location: player.location
       }
-    end  
+    end
     File.write(PLAYERS_DATABASE, JSON.pretty_generate(file_data))
-  
-  end 
+
+  end
 
 
   def overwrite_player(player)
 
-    self.players.each do |search|
+    players.each do |search|
       if player.name == search.name
         search.name = player.name
         search.short_description = player.short_description
         search.stats = player.stats
-        search.profession = player.profession  
+        search.profession = player.profession
         search.location = player.location
       end
     end
-  
+
   end
 
 
   def load_player(name)
 
-    self.players.each do |search|
+    players.each do |search|
       if name == search.name
         new_player = Player.new(
           search.name,
@@ -83,11 +81,11 @@ class PlayerList
           search.stats,
           search.profession,
           search.location
-        )  
+        )
         return new_player
       end
     end
     puts "That character does not exist!".colorize(:red).indent(10)
-  end  
+  end
 
 end

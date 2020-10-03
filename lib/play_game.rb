@@ -1,5 +1,5 @@
 def start_game(character)
-  
+
   character.print_player
   puts puts puts puts puts
   puts "Game starting...".colorize(:light_cyan).indent(10)
@@ -12,7 +12,7 @@ def start_game(character)
   puts
   interaction(character, world, current_room)
 
-end  
+end
 
 
 def print_help
@@ -25,7 +25,8 @@ def print_help
   puts "You can type 'quit' to save your character and quit.".colorize(:red).indent(10)
   puts
 
-end  
+end
+
 
 def quit_game(character)
 
@@ -34,7 +35,7 @@ def quit_game(character)
   puts "Thanks for playing Isles of the Blessed. See you soon!".colorize(:light_cyan).indent(10)
   exit
 
-end  
+end
 
 
 def interaction(character, world, current_room)
@@ -45,13 +46,13 @@ def interaction(character, world, current_room)
     case action
     when "quit"
       quit_game(character)
-    when "help" 
-      print_help 
+    when "help"
+      print_help
     when "exits"
       puts
       current_room.print_exits
       puts
-    when "north", "south", "east", "west"  
+    when "north", "south", "east", "west"
       if current_room.check_exits.include?(action)
         puts
         puts "You move #{action}".indent(10)
@@ -64,11 +65,11 @@ def interaction(character, world, current_room)
         puts
         puts "You can not go that way!".colorize(:red).indent(10)
         puts
-      end  
-    else 
+      end
+    else
       puts "That is not a valid action, please try again. Type 'help' if you are stuck.".colorize(:red).indent(10)
-    end  
-  end  
-  
-end  
+    end
+  end
+
+end
 

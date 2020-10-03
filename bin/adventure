@@ -8,20 +8,20 @@ require 'inkjet'
 require 'json'
 
 # files
-require_relative './lib/start_menu.rb'
-require_relative './lib/room.rb'
-require_relative './lib/room_list.rb'
-require_relative './lib/new_character.rb'
-require_relative './lib/character.rb'
-require_relative './lib/player.rb'
-require_relative './lib/player_list.rb'
-require_relative './lib/play_game.rb'
-require_relative './lib/ascii_image.rb'
+require_relative '../lib/start_menu.rb'
+require_relative '../lib/room.rb'
+require_relative '../lib/room_list.rb'
+require_relative '../lib/new_character.rb'
+require_relative '../lib/character.rb'
+require_relative '../lib/player.rb'
+require_relative '../lib/player_list.rb'
+require_relative '../lib/play_game.rb'
+require_relative '../lib/ascii_image.rb'
 
 # Specify JSON library files
-PLAYER_CLASSES = './data/player_classes.json'.freeze
-PLAYERS_DATABASE = './data/saved_characters.json'
-WORLD_DATABASE = './data/rooms.json'.freeze
+PLAYER_CLASSES = '../data/player_classes.json'.freeze
+PLAYERS_DATABASE = '../data/saved_characters.json'
+WORLD_DATABASE = '../data/rooms.json'.freeze
 
 # Load start menu if no argument passed.
 if ARGV.length.zero?

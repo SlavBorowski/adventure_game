@@ -40,33 +40,5 @@
     },
     "profession": "rogue",
     "location": 5
-  },
-  {
-    "name": "ponyo",
-    "short_description": "a fish",
-    "stats": {
-      "strength": 9,
-      "dexterity": 15,
-      "constitution": 14,
-      "intelligence": 16,
-      "wisdom": 13,
-      "charisma": 11
-    },
-    "profession": "mage",
-    "location": 2
-  },
-  {
-    "name": "legolas",
-    "short_description": "an elf",
-    "stats": {
-      "strength": 16,
-      "dexterity": 14,
-      "constitution": 15,
-      "intelligence": 9,
-      "wisdom": 13,
-      "charisma": 11
-    },
-    "profession": "warrior",
-    "location": 3
   }
 ]

@@ -19,9 +19,9 @@ require_relative './lib/play_game.rb'
 require_relative './lib/ascii_image.rb'
 
 # Specify JSON library files
-PLAYER_CLASSES = './lib/player_classes.json'.freeze
-PLAYERS_DATABASE = './lib/saved_characters.json'
-WORLD_DATABASE = './lib/rooms.json'.freeze
+PLAYER_CLASSES = './data/player_classes.json'.freeze
+PLAYERS_DATABASE = './data/saved_characters.json'
+WORLD_DATABASE = './data/rooms.json'.freeze
 
 # Load start menu if no argument passed.
 if ARGV.length.zero?

@@ -1,4 +1,4 @@
-
+# This class stores the information for each individual room.
 class Room
 
   attr_accessor :id_number, :name, :description, :exits
@@ -13,6 +13,7 @@ class Room
   end
 
 
+  # Print the room to the screen.
   def print_room
 
     puts name.capitalize.colorize(:green).bold.indent(10)
@@ -23,6 +24,7 @@ class Room
   end
 
 
+  # Check which exits a room has.
   def check_exits
 
     exit_list = []
@@ -36,6 +38,7 @@ class Room
   end
 
 
+  # Print the exits the room has.
   def print_exits
 
     exit_list = check_exits

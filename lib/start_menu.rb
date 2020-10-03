@@ -1,3 +1,4 @@
+# Display the start menu.
 def display_start_menu
   
   ascii_image
@@ -14,6 +15,7 @@ def display_start_menu
 end
 
 
+# Get user choice for start menu.
 def start_menu_selection
 
   loop do
@@ -21,11 +23,14 @@ def start_menu_selection
     user_choice = gets.chomp.downcase
     puts `clear`
     case user_choice
+    # Create a new character and start the game.
     when "new"
       start_game(create_character)
+    # Load an existing character and start the game.  
     when "load"
       name = get_text("name")
       load_game(name)
+    # Quit the game.  
     when "quit"
       puts
       puts "Thanks for playing Isles of the Blessed. See you soon!".colorize(:light_cyan).indent(10)
@@ -37,9 +42,11 @@ def start_menu_selection
 end
 
 
+# Load game for existing character.
 def load_game(name)
 
   ARGV.pop
+  # Find and load player.
   players = PlayerList.new
   until players.find_player(name)
     puts "That character does not exist!".colorize(:red).indent(10)
@@ -49,7 +56,7 @@ def load_game(name)
   puts `clear`
   puts "Welcome back!".bold.colorize(:light_cyan).indent(10)
   puts
-
+  # Start game for existing player.
   start_game(returning_player)
 
 end

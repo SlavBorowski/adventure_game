@@ -1,3 +1,4 @@
+# The RoomList stores all the individual rooms that make up the world.
 class RoomList
 
   attr_accessor :rooms
@@ -8,7 +9,8 @@ class RoomList
 
   end
 
-
+  
+  # Read all the rooms from a JSON file.
   def read_rooms
 
     file_data = File.read(WORLD_DATABASE)
@@ -24,7 +26,10 @@ class RoomList
 
   end
 
-
+  
+  # Writes all the rooms to JSON file. Will be used more when players are able
+  # to interact with rooms and the objects in them. At this point each player will
+  # have their own room_list file to save.
   def write_rooms
 
     file_data = rooms.map do |current_room|
@@ -40,6 +45,7 @@ class RoomList
   end
 
 
+  # Load an individual room from the list.
   def load_room(room_id)
 
     rooms.each do |search|

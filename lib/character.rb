@@ -1,3 +1,4 @@
+# Character class used for creating any chracters whether player or game controlled.
 class Character
 
   attr_accessor :name, :short_description, :stats
@@ -8,6 +9,7 @@ class Character
     @stats = stats
   end
 
+  #Print all Chracter class information.
   def print_class
 
     puts "* #{name.capitalize} *".colorize(:light_green).bold.indent(10)

@@ -1,3 +1,4 @@
+# Print ascii art during start menu
 def ascii_image
   puts <<-'EOF'
 

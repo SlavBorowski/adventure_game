@@ -1,3 +1,4 @@
+# Player class is a child of character class and is used to store player information.
 class Player < Character
 
   attr_accessor :profession, :location
@@ -12,15 +13,17 @@ class Player < Character
 
   end
 
+  # Save individual player into list of players.
   def save(saved_players)
 
+    # Save exsting player.
     if saved_players.find_player(name)
-
       saved_players.overwrite_player(self)
       saved_players.write_players
       puts `clear`
       puts "Your progress has been saved.".colorize(:light_cyan).indent(10)
       puts
+    # Save new player.
     else
       saved_players.players << self
       saved_players.write_players
@@ -31,7 +34,7 @@ class Player < Character
 
   end
 
-
+  # Print all the informatio of a player excluding location.
   def print_player
 
     print "Name:        ".colorize(:yellow).indent(10)

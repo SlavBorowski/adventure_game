@@ -1,3 +1,4 @@
+# This class stores the list of esisting players from a JSON file.
 class PlayerList
 
   attr_accessor :players
@@ -9,6 +10,7 @@ class PlayerList
   end
 
 
+  # Read the players from the JSON file.
   def read_players
 
     file_data = File.read(PLAYERS_DATABASE)
@@ -30,6 +32,7 @@ class PlayerList
   end
 
 
+  # Confirm if a player exists in the list.
   def find_player(player_name)
 
     players.each do |search|
@@ -39,7 +42,7 @@ class PlayerList
 
   end 
 
-
+  # Overwrite the list of players in JSON file.
   def write_players
 
     file_data = players.map do |player|
@@ -56,6 +59,7 @@ class PlayerList
   end
 
 
+  #Overwrite an individual player in the list.
   def overwrite_player(player)
 
     players.each do |search|
@@ -71,6 +75,7 @@ class PlayerList
   end
 
 
+  # Load an individual player from the list.
   def load_player(name)
 
     players.each do |search|

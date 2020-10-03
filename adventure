@@ -23,10 +23,11 @@ PLAYER_CLASSES = './lib/player_classes.json'.freeze
 PLAYERS_DATABASE = './lib/saved_characters.json'
 WORLD_DATABASE = './lib/rooms.json'.freeze
 
-
+# Load start menu if no argument passed.
 if ARGV.length.zero?
   puts `clear`
   start_menu_selection
+# Load existing character passed as argument and start game.  
 elsif ARGV.length == 1
   load_game(ARGV[0])
 else

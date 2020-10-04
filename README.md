@@ -94,6 +94,8 @@ The implementation of the application was planned and tracked using the below Tr
 
 [https://trello.com/b/S7mExsQc/adventure-game-app](https://trello.com/b/S7mExsQc/adventure-game-app)
 
+![Trello Board](./docs/Trello_screen.png)
+
 The board has four lists: Nice to Have, Backlog, Current and Completed. The Nice to Have list contains any ideas and functions which I would like to implement but most likely won't have time to complete within the project time constraints, so these will be worked on after the submission of the project. The Backlog list contained the 3 main features required to have a functioning application and must be completed by the deadline. As I began working on each item it was moved to the Current list and then to the Completed list once finished.
 
 I commenced the project by working on the start menu to launch the application and present the player with their options. The next step was to work on the character system because the game works around a character interacting with their environment, hence without a character there is no game. Once a character could be created I implemented save and load features for the created character. When I could create, load and save a player, I needed a world which the character could move through. This was done by first creating an individual room, then a group of rooms and finally other functions to interact with those room objects. Once additional item which needed to be implemented after the characters and world was a way to save the character's current location.
@@ -103,4 +105,6 @@ I commenced the project by working on the start menu to launch the application a
 Here is a link the spreadsheet I used for testing the main features of the application:
 
 [Spreadsheet](https://docs.google.com/spreadsheets/d/1esvwRxVkNWoOt7-0wz5ZR_gOTAm72TgjYmicg-1YpII/edit?usp=sharing)
+
+![Spreadsheet](./docs/Spreadsheet_screen.png)
 

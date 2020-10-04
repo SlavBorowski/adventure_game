@@ -100,3 +100,7 @@ I commenced the project by working on the start menu to launch the application a
 
 ## Testing
 
+Here is a link the spreadsheet I used for testing the main features of the application:
+
+[Spreadsheet](https://docs.google.com/spreadsheets/d/1esvwRxVkNWoOt7-0wz5ZR_gOTAm72TgjYmicg-1YpII/edit?usp=sharing)
+

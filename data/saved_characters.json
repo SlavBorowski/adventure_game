@@ -11,34 +11,6 @@
       "charisma": 9
     },
     "profession": "ranger",
-    "location": 10
-  },
-  {
-    "name": "slav",
-    "short_description": "a guy.",
-    "stats": {
-      "strength": 9,
-      "dexterity": 15,
-      "constitution": 14,
-      "intelligence": 16,
-      "wisdom": 13,
-      "charisma": 11
-    },
-    "profession": "mage",
-    "location": 2
-  },
-  {
-    "name": "olaf",
-    "short_description": "a snowman",
-    "stats": {
-      "strength": 13,
-      "dexterity": 16,
-      "constitution": 11,
-      "intelligence": 15,
-      "wisdom": 14,
-      "charisma": 9
-    },
-    "profession": "rogue",
     "location": 5
   }
 ]

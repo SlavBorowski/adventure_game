@@ -36,7 +36,7 @@ def start_menu_selection
       puts "Thanks for playing Isles of the Blessed. See you soon!".colorize(:light_cyan).indent(10)
       exit
     else
-      puts "Please select from the options above: NEW, LOAD or QUIT".colorize(:red).indent(10)
+      puts "Please enter one of the following options: NEW, LOAD or QUIT".colorize(:red).indent(10)
     end
   end
 end
